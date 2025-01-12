@@ -1,0 +1,148 @@
+body {
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    padding: 2rem;
+    background-color: #1D4D72;
+    font-size: 2rem;
+}
+
+#name {
+    color: yellow;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #333;
+
+}
+
+nav a {
+    color: white;
+}
+
+#navigation {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-right: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.grid-container {
+    display: grid;
+    max-width: 100%;
+    margin: 0 auto;
+    grid-template-columns: 2fr 1fr;
+}
+
+.card-1 {
+    border-radius: 10px;
+    border: 1px solid gray;
+    margin: 0.5rem;
+    grid-column: 1 / 2;
+    height: auto;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-family: Roboto, Arial, sans-serif;
+    padding: 0.5rem;
+    text-align: center;
+    margin: auto;
+    background-color: #1D4D72;
+    color: white;
+    border-top-left-radius: 8px 8px;
+    border-top-right-radius: 8px 8px;
+}
+
+div img {
+    width: 150px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+h3 {
+    font-size: 1rem;
+    text-align: center;
+    padding: 0px;
+    color: #1D4D72;
+    margin: 3rem 1rem 1rem 1rem;
+}
+
+hr {
+    display: block;
+    margin: 0.5em 1rem 0.5rem 1rem;
+    border-style: inset;
+    border-width: 1px;
+}
+
+#barcelona {
+    width: 150px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    float: left;
+    margin: 1rem;
+}
+.card-2 {
+    border-radius: 10px;
+    border: 1px solid gray;
+    margin: 0.5rem auto;
+    height: auto;
+}
+
+ul li {
+    display: flex;
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+.card-2 a {
+    color: blue;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #1D4D72;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#font-color {
+    color: yellow;
+}
