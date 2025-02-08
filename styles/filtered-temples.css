@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: roboto, sans-serif;
+}
+
+header {
+    background-color: #1b263b;
+    color: #e0e1dd;
+    padding: 1rem;
+}
+
+h1,
+h2 {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: auto 10px;
+}
+
+nav {
+    max-width: 700px;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+#menu::before {
+    content: "☰";
+    color: white;
+
+}
+
+#menu.open {
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#menu.open::before {
+    content: "x";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    color: #fff;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation a:hover {
+    color: white;
+    text-decoration: underline 2px solid white;
+    transition: all 5ms ease-in-out;
+
+}
+
+.open a {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.stuff {
+    margin: .5m;
+    border: 1px solid rgba(0, 0, 0, .1);
+    background-color: #bed;
+    max-width: 580px;
+    height: 100vh;
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    border-bottom: 1px solid black;
+    margin: 1rem;
+}
+
+main {
+    margin: 1rem auto;
+    max-width: 750px;
+}
+
+li {
+    list-style: none;
+}
+
+.temple-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    place-items: center;
+    margin: 5px 20px;
+}
+
+.temple-card {
+    border: 1px solid #778DA9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #0d1b2ac2;
+    margin-bottom: 30px;
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;
+    height: auto;
+}
+
+h3 {
+    text-align: center;
+    font-size: 16px;
+    color: #1B263B;
+
+}
+
+strong {
+    color: #0d1b2a
+}
+
+p {
+    font-size: 12px;
+    color: #415a77;
+    padding: 5px;
+    text-align: center;
+}
+
+footer {
+    background-color: #1b263b;
+    color: #e0e1dd;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0;
+    color: white;
+    font-size: 1rem;
+}

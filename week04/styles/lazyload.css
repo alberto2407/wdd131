@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    background-color: #CCCCCC;
+    color: gray;
+    padding: 2rem;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background-color: #9C9C9C;
+    gap: 2rem;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 50%;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #CCCCCC;
+    color: gray;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 10px;
+}
