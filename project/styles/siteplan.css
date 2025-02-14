@@ -1,0 +1,76 @@
+:root {
+    --primary-color: #155263;
+    --secondary-color: #ff6f3c;
+    --tertiary-color: #ff9a3c;
+    --quaternary-color: #ffc93c;
+
+    --merriweather-bold-italic: "Merriweather", serif;
+    --merriweather-bold-weight: 400;
+    --merriweather-bold-style: italic;
+
+    --merriweather-regular-font: 'Merriweather', serif;
+    --merriweather-regular-weight: 400;
+    --merriweather-regular-style: normal;
+
+    --lora-font: 'Lora', serif;
+    --lora-weight: 400;
+    --lora-style: normal;
+}
+ 
+header{
+    padding: 1rem;
+    text-align: center;
+}
+
+h1{
+    font-family: var(--merriweather-bold-italic);
+    color: var(--secondary-color);
+}
+
+main {
+    max-width: 640px;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+.font-tittle{
+    font-family:  var(--merriweather-regular-font);
+    color: var(--tertiary-color);
+} 
+
+.font-paragraph{
+    font-family: var(--lora-font);
+    color: var(--tertiary-color);
+}
+
+.font-header-foot{
+    font-family: var(--merriweather-bold-italic);
+    color: var(--tertiary-color);
+}
+
+ul{
+    font-family: var(--lora-font);
+    color: var(--primary-color);
+}
+
+h2{
+    font-family: var(--merriweather-regular-font);
+    color: var(--secondary-color);
+}
+
+p{
+    font-family: var(--lora-font);
+    color: var(--primary-color);
+}
+
+img{
+    width: 30%;
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+}
+footer p{
+    font-family: var(--merriweather-bold-italic);
+} 
