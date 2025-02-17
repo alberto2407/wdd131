@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get" class="wf1">
+            <div>Product Name</div>
+            <select name="product-name" id="product-name" required>
+                <option value="" disabled selected>Choose a Product...</option>
+            </select>
+
+            <div>Overall Rating</div>
+            <section class="rating-box">
+                <label for="radio-1">☆<br><input id="radio" type="radio" name="stars" value="5" required></label>
+                <label for="radio-2">☆☆<br><input id="radio" type="radio" name="stars" value="4" required></label>
+                <label for="radio-3">☆☆☆<br><input id="radio" type="radio" name="stars" value="3" required></label>
+                <label for="radio-4">☆☆☆☆<br><input id="radio" type="radio" name="stars" value="2" required></label>
+                <label for="radio-5">☆☆☆☆☆<br><input id="radio" type="radio" name="stars" value="1" required></label>
+            </section>
+
+            <div>Date of Installation</div>
+            <input type="date" id="date" name="date" required>
+
+            <div>Which features did you find useful in the product?<br>(Check all that apply)</div>
+            <label><input type="checkbox" name="durability" value="yes"> Durability</label>
+            <label><input type="checkbox" name="easy-to-use" value="yes"> Easy to use</label>
+            <label><input type="checkbox" name="performance" value="yes"> Performance</label>
+            <label><input type="checkbox" name="design" value="yes"> Design</label>
+
+            <div>Written Review <span class="optional">(Optional)</span></div>
+            <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+
+            <div>Your Name <span class="optional">(Optional)</span></div>
+            <input type="text" id="name" name="name">
+
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p> &copy; | <span id="currentYear"></span> | Alberto F. Conejo</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

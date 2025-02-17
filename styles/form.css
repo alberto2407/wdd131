@@ -1,0 +1,114 @@
+:root {
+    --primary-color: #2D032B;
+    --secondary-color: #D5CDD5;
+    --tertiary-color: #11147E;
+    --quaternary-color: #D5CDD5;
+
+    --roboto-font: "Roboto", sans-serif;
+    --roboto-weight: 400;
+    --roboto-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+    font-family: var(--roboto-font);
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: white;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    max-width: 400px;
+    border-radius: 6px;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+main {
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #999;
+    border-radius: 6px;
+    background-color: var(--secondary-color);
+    max-width: 400px;
+}
+
+
+p {
+    font-weight: bold;
+    text-align: center
+}
+
+.thanks {
+    text-align: center;
+}
+
+div {
+    margin: 10px 0 5px 0;
+    font-weight: bold;
+}
+
+#product-name, #date, #name, #comments {
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: .50rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+} 
+
+.wf1 label {
+    display: block;
+    padding-top: .1rem;
+}
+
+.rating-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section {
+    text-align: center;
+    font-weight: bold;
+} 
+
+input[type="checkbox"] {
+    transform: scale(1.2);
+}
+
+.optional {
+    color: var(--tertiary-color);
+}
+
+input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#2D032B, #61085c); 
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    margin: 10px 0;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-image: linear-gradient(#61085c, #2D032B);
+}
+
+footer {
+    margin-top: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+} 
