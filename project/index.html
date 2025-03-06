@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaration</title>
+    <meta name="description" content="Restaration">
+    <meta name="keywords" content="Restaration">
+    <meta name="author" content="Alberto Flores">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Domine:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/restoration.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/temple-logo.webp" alt="Church Logo">
+        <button id="menu" title="Menu"></button>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="intro">
+            <picture class="first-vision">
+                <source media="(min-width: 1000px )" srcset="images/the_first_vision.webp" >
+                <source media="(min-width: 500px)" srcset="images/the_first_vision_medium.webp" >
+                <img class="hero-image" src="images/the_first_vision_small.webp" alt="The first vision" loading="lazy">
+            </picture>
+            <div class="intro-message">
+                <h2> The Truth Restored</h2>
+                <p>If you are looking for the truth, then this is the place<br> for you to explore deeply about it</p>
+                <a class="button" href="#">Contact Us</a>
+            </div>
+        </section>
+        <section class="intro-topic">
+            <h1 class="title">The Restoration</h1>
+            <div class="intro-box"></div>
+            <div class="intro-question"></div>
+        </section>
+        <h2 class="card-title">Upcoming Events</h2>
+        <section class="card-container">
+            <div class="principles">
+                <img class="card-image" src="images/beloved_god.webp" alt="Beloved God" loading="lazy">
+                <h2>Beloved God</h2>
+            </div>
+            <div class="principles">
+                <img class="card-image" src="images/prophets.webp" alt="Prophets" loading="lazy">
+                <h2>Prophets</h2>
+            </div>
+            <div class="principles">
+                <img class="card-image" src="images/minitery.webp" alt="Christ Ministry" loading="lazy">
+                <h2>Christ Ministry</h2>
+            </div>
+            <div class="principles">
+                <img class="card-image" src="images/Apostasy.webp" alt="Apostasy" loading="lazy">
+                <h2>Apostasy</h2>
+            </div>
+            <div class="principles">
+                <img class="card-image" src="images/Joseph_Smith.webp" alt="Joseph Smith" loading="lazy">
+                <h2>Joseph Smith</h2>
+            </div>
+            <div class="principles">
+                <img class="card-image" src="images/pray.webp" alt="Pray" loading="lazy">
+                <h2>Pray</h2>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p> &copy; | <span id="currentYear"></span> | Alberto F. Conejo</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
