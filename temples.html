@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 11 - Temple Album</title>
+    <meta name="description" content="Temples Activity">
+    <meta name="author" content="Alberto Flores">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Temples Album</h1>
+            <button id="hamburger" aria-label="Toggle navigation menu">☰</button>
+        </div>
+        <nav id="navigation">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+       <h1>Temples Gallery</h1>
+        <div class="gallery">
+            <figure class="temple-card">
+                <img src="images/Barcelona_Spain_Temple.webp" alt="Barcelona Spain Temple" loading="lazy">
+                <figcaption>
+                    <strong class="temple-name">Barcelona Spain Temple</strong>
+                    <br>
+                    <strong>Location: </strong><span class="temple-location">Barcelona, Spain</span>
+                    <br>
+                    <strong>Dedication: </strong><span class="temple-dedication">Coming Soon</span>
+                </figcaption>
+            </figure>
+            <figure class="temple-card">
+                <img src="images/Paris_France_Temple.webp" alt="Paris France Temple" loading="lazy">
+                <figcaption>
+                    <strong class="temple-name">Paris France Temple</strong>
+                    <br>
+                    <strong>Location: </strong><span class="temple-location">Paris, France</span>
+                    <br>
+                    <strong>Dedication: </strong><span class="temple-dedication">21 May 2017</span>
+                </figcaption>
+            </figure>
+            <figure class="temple-card">
+                <img src="images/Frankfurt_Germany_Temple.webp" alt="Frankfurt Germany Temple" loading="lazy">
+                <figcaption>
+                    <strong class="temple-name">Frankfurt Germany Temple</strong>
+                    <br>
+                    <strong>Location: </strong><span class="temple-location">Frankfurt, Germany</span>
+                    <br>
+                    <strong>Dedication: </strong><span class="temple-dedication">28–30 August 1987</span>
+                </figcaption>
+            </figure>
+            <figure class="temple-card">
+                <img src="images/Guayaquil_Ecuador_Temple.webp" alt="Guayaquil Ecuador Temple" loading="lazy">
+                <figcaption>
+                    <strong class="temple-name">Guayaquil Ecuador Temple</strong>
+                    <br>
+                    <strong>Location: </strong><span class="temple-location">Guayaquil, Ecuador</span>
+                    <br>
+                    <strong>Dedication: </strong><span class="temple-dedication">1–2 August 1999</span>
+                </figcaption>
+            </figure>
+            <figure class="temple-card">
+                <img src="images/Lima_Peru_Temple.webp" alt="Lima Peru Temple" loading="lazy">
+                <figcaption>
+                    <strong class="temple-name">Lima Peru Temple</strong>
+                    <br>
+                    <strong>Location: </strong><span class="temple-location">Lima, Peru</span>
+                    <br>
+                    <strong>Dedication: </strong><span class="temple-dedication">10–12 January 1986</span>
+                </figcaption>
+            </figure>
+            <figure class="temple-card">
+                <img src="images/Lisbon_Portugal_Temple.webp" alt="Lisbon Portugal Temple" loading="lazy">
+                <figcaption>
+                    <strong class="temple-name">Lisbon Portugal Temple</strong>
+                    <br>
+                    <strong>Location: </strong><span class="temple-location">Lisbon, Portugal</span>
+                    <br>
+                    <strong>Dedication: </strong><span class="temple-dedication">15 September 2019</span>
+                </figcaption>
+            </figure>
+            <figure class="temple-card">
+                <img src="images/Rome_Italy_Temple.webp" alt="Rome Italy Temple" loading="lazy">
+                <figcaption>
+                    <strong class="temple-name">Rome Italy Temple</strong>
+                    <br>
+                    <strong>Location: </strong><span class="temple-location">Rome, Italy</span>
+                    <br>
+                    <strong>Dedication: </strong><span class="temple-dedication">10–12 March 2019</span>
+                </figcaption>
+            </figure>
+            <figure class="temple-card">
+                <img src="images/The_Hague_Netherlands_Temple.webp" alt="The Hague Netherlands Temple" loading="lazy">
+                <figcaption>
+                    <strong class="temple-name">The Hague Netherlands Temple</strong>
+                    <br>
+                    <strong>Location: </strong><span class="temple-location">The Hague, Netherlands</span>
+                    <br>
+                    <strong>Dedication: </strong><span class="temple-dedication">8 September 2002</span>
+                </figcaption>
+            </figure>
+            <figure class="temple-card">
+                <img src="images/Quito_Ecuador_Temple.webp" alt="Quito Ecuador Temple" loading="lazy">
+                <figcaption>
+                    <strong class="temple-name">Quito Ecuador Temple</strong>
+                    <br>
+                    <strong>Location: </strong><span class="temple-location">Quito, Ecuador</span>
+                    <br>
+                    <strong>Dedication: </strong><span class="temple-dedication">20 November 2022</span>
+                </figcaption>
+            </figure>
+            <figure class="temple-card">
+                <img src="images/Madrid_Spain_Temple.webp" alt="Madrid Spain Temple" loading="lazy">
+                <figcaption>
+                    <strong class="temple-name">Madrid Spain Temple</strong>
+                    <br>
+                    <strong>Location: </strong><span class="temple-location">Madrid, Spain</span>
+                    <br>
+                    <strong>Dedication: </strong><span class="temple-dedication">19–21 March 1999</span>
+                </figcaption>
+            </figure>
+            <figure class="temple-card">
+                <img src="images/Bern_Switzerland_Temple.webp" alt="Bern Switzerland Temple" loading="lazy">
+                <figcaption>
+                    <strong class="temple-name">Bern Switzerland Temple</strong>
+                    <br>
+                    <strong>Location: </strong><span class="temple-location">Bern, Switzerland</span>
+                    <br>
+                    <strong>Dedication: </strong><span class="temple-dedication">11 September 1955</span>
+                </figcaption>
+            </figure>
+            <figure class="temple-card">
+                <img src="images/Tokyo_Japan_Temple.webp" alt="Tokyo Japan Temple" loading="lazy">
+                <figcaption>
+                    <strong class="temple-name">Tokyo Japan Temple</strong>
+                    <br>
+                    <strong>Location: </strong><span class="temple-location">Tokyo, Japan</span>
+                    <br>
+                    <strong>Dedication: </strong><span class="temple-dedication">27 de octubre de 1980</span>
+                </figcaption>
+            </figure>
+        </div>
+    </main>
+     <footer>
+        <p>
+            &copy; <span id="currentyear"></span> | Alberto F. Conejo | Barcelona, Spain
+        </p>
+        <p id="lastModified" class="last-modified"></p>
+    </footer>
+</body>
+</html>
