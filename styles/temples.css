@@ -185,6 +185,7 @@ footer {
 }
 
 footer p {
+    color: var(--title-color);
     margin: 0.3rem 0;
     font-size: 1rem;
 }
