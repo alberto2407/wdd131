@@ -9,6 +9,7 @@
     --primary-color: #2c3e50;
     --secondary-color: #67afe0;
     --accent-color: #1abc9c;
+    --title-color: #ffffff;
     --text-color: #333;
     --bg-color: #f4f6f9;
     --card-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -26,7 +27,7 @@ header {
     display: flex;
     justify-content: space-between;
     background: linear-gradient(135deg, var(--primary-color), #1a252f);
-    color: white;
+    color: var(--title-color);
     padding: 1.5rem 2rem;
     position: sticky;
     top: 0;
@@ -51,7 +52,7 @@ header h1 {
     background: none;
     border: 2px solid white;
     border-radius: 4px;
-    color: white;
+    color: var(--title-color);
     font-size: 1.8rem;
     padding: 0.2rem 0.8rem;
     cursor: pointer;
@@ -82,7 +83,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: white;
+    color: var(--title-color);
     text-decoration: none;
     font-weight: 500;
     font-size: 1.1rem;
@@ -176,7 +177,7 @@ figcaption .temple-name {
 /* ---- FOOTER ---- */
 footer {
     background: linear-gradient(135deg, var(--primary-color), #1a252f);
-    color: white;
+    color: var(--title-color);
     text-align: center;
     padding: 2rem 1rem;
     margin-top: 2rem;
