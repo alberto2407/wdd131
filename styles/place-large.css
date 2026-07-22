@@ -1,0 +1,140 @@
+/* ---- BIG SCREENS (≥ 768px) ---- */
+@media screen and (min-width: 768px) {
+
+  /*---- HEADER ----*/
+  header {
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  /*---- MAIN CONTAINER ----*/
+  .container {
+    position: relative;
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /*---- HERO SECTION ----*/
+  .hero-section {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .hero-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+  }
+
+  /*---- DATA & WEATHER SECTION ----*/
+  .data,
+  .weather {
+    position: absolute;
+    max-width: 280px;
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(2px);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    max-width: clamp(220px, 25vw, 280px);
+    padding: clamp(1rem, 1.5vw, 1.5rem);
+    font-size: clamp(0.8rem, 0.9vw, 1rem);
+  }
+
+  .data {
+    top: clamp(4rem, 4vw, 4rem);
+    left: clamp(4rem, 4vw, 4rem);
+  }
+
+  .weather {
+    bottom: clamp(4rem, 4vw, 4rem);
+    right: clamp(4rem, 4vw, 4rem);
+  }
+
+  .data .box-title,
+  .weather .box-title {
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    padding-bottom: clamp(0.5rem, 1%, 1rem);
+    margin-bottom: clamp(0.5rem, 1%, 1rem);
+  }
+
+  .info-list li {
+    padding: clamp(0.3rem, 0.5%, 0.6rem) 0;
+    font-size: clamp(0.75rem, 0.8vw, 1rem);
+  }
+
+  .label {
+    font-size: clamp(0.7rem, 0.8vw, 0.95rem);
+  }
+
+  /*---- WEATHER ICON ----*/
+  .weather-icon-desktop {
+    display: inline-block;
+    font-size: clamp(1.2rem, 2vw, 2rem);
+    line-height: 1;
+    margin-left: 0.5rem;
+    color: var(--accent-color);
+  }
+
+  .weather .box-title::after {
+    content: " ⛅";
+    font-size: clamp(1.2rem, 2vw, 2rem);
+    color: var(--accent-color);
+    margin-left: 0.5rem;
+  }
+
+  .weather-icon-mobile {
+    display: none;
+  }
+
+  /*---- FOOTER ----*/
+  footer {
+    padding: 2rem;
+    margin-top: 3rem;
+  }
+}
+
+/* ---- BIGGEST SCREENS (≥ 1024px) ---- */
+@media screen and (min-width: 1024px) {
+
+  .data,
+  .weather {
+    max-width: 320px;
+    padding: 2rem;
+    font-size: 1rem;
+  }
+
+  .data {
+    top: 4rem;
+    left: 4rem;
+  }
+
+  .weather {
+    bottom: 4rem;
+    right: 4rem;
+  }
+
+  .data .box-title,
+  .weather .box-title {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .container {
+    max-width: 1400px;
+  }
+}
