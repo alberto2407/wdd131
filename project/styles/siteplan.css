@@ -1,0 +1,308 @@
+/* ---- RESET AND VARIABLES ---- */
+:root {
+    --primary-color: #155263;
+    --secondary-color: #8a3415;
+    --tertiary-color: #6f3e11;
+    --quaternary-color: #876717;
+    --text-color: #2c3e50;
+    --bg-color: #f8f9fa;
+    --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    --merriweather-bold-italic: "Merriweather", serif;
+    --merriweather-regular: 'Merriweather', serif;
+    --lora: 'Lora', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--lora);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.8;
+    padding: 1rem;
+}
+
+/* ---- HEADER ---- */
+header {
+    background: linear-gradient(135deg, var(--primary-color), #0d3b4a);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-family: var(--merriweather-bold-italic);
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-family: var(--merriweather-regular);
+    color: var(--quaternary-color);
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/* ---- MAIN ---- */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+/* ---- SECCIONES ---- */
+.plan-section {
+    background: white;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    border-left: 6px solid var(--secondary-color);
+}
+
+.plan-section h3 {
+    font-family: var(--merriweather-regular);
+    color: var(--secondary-color);
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--quaternary-color);
+    padding-bottom: 0.5rem;
+}
+
+.plan-section p {
+    font-family: var(--lora);
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.plan-section .description {
+    font-size: 0.95rem;
+    color: #555;
+    margin-top: 0.5rem;
+}
+
+/* ---- LISTAS ---- */
+.plan-section ul {
+    font-family: var(--lora);
+    color: var(--primary-color);
+    padding-left: 1.5rem;
+    list-style: none;
+}
+
+.plan-section ul li {
+    padding: 0.3rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.plan-section ul li::before {
+    content: "✦";
+    color: var(--secondary-color);
+    position: absolute;
+    left: 0;
+    font-size: 1.1rem;
+}
+
+.plan-section ul li strong {
+    color: var(--primary-color);
+}
+
+/* ---- SCENARIOS ---- */
+.scenario {
+    background: #f8f9fa;
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    margin-bottom: 0.8rem;
+    border-left: 4px solid var(--tertiary-color);
+}
+
+.scenario:last-child {
+    margin-bottom: 0;
+}
+
+.scenario .question {
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.2rem;
+}
+
+.scenario .answer {
+    font-size: 0.95rem;
+    color: #555;
+    padding-left: 1.5rem;
+}
+
+/* ---- COLOR PALETTE ---- */
+.color-palette {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.color-swatch {
+    width: 120px;
+    height: 80px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.color-swatch .color-label {
+    font-size: 0.7rem;
+    opacity: 0.9;
+    margin-top: 2px;
+}
+
+/* ---- TYPOGRAPHY ---- */
+.typography-examples p {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.typography-examples p:last-child {
+    border-bottom: none;
+}
+
+.font-title {
+    font-family: var(--merriweather-bold-italic);
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+}
+
+.font-body {
+    font-family: var(--merriweather-regular);
+    color: var(--tertiary-color);
+    font-size: 1.1rem;
+}
+
+.font-text {
+    font-family: var(--lora);
+    color: var(--primary-color);
+}
+
+/* ---- WIREFRAME ---- */
+.wireframe-container {
+    display: flex;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+.wireframe-container figure {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.wireframe-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    max-height: 400px;
+    object-fit: contain;
+}
+
+.wireframe-container figcaption {
+    font-family: var(--merriweather-regular);
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+/* ---- FOOTER ---- */
+footer {
+    background: linear-gradient(135deg, var(--primary-color), #0d3b4a);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-radius: 12px;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-family: var(--merriweather-bold-italic);
+    color: var(--quaternary-color);
+    margin: 0.2rem 0;
+}
+
+footer p:first-child {
+    color: white;
+}
+
+#lastModified {
+    font-family: var(--lora);
+    color: #ffc93c;
+    font-size: 0.9rem;
+}
+
+/* ---- MEDIA QUERIES ---- */
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .plan-section {
+        padding: 1rem;
+    }
+
+    .color-palette {
+        justify-content: center;
+    }
+
+    .color-swatch {
+        width: 100px;
+        height: 70px;
+        font-size: 0.7rem;
+    }
+
+    .wireframe-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wireframe-container figure {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .wireframe-container img {
+        max-height: 200px;
+    }
+}
+
+/*---- MEDIA QUERY BIGGER SCREEN ----*/
+@media screen and (min-width: 768px) {
+    .wireframe-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: center;
+    }
+
+    .wireframe-container figure {
+        width: 45%;
+        max-width: 400px;
+    }
+
+    .wireframe-container img {
+        max-height: 350px;
+    }
+}
