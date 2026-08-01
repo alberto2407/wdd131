@@ -1,0 +1,41 @@
+/* ---- MEDIA QUERY PARA PANTALLAS GRANDES ---- */
+@media screen and (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1.5rem 2rem;
+    }
+
+    .header-content {
+        width: auto;
+        flex: 0 0 auto;
+    }
+
+    nav {
+        overflow: visible;
+        transition: none;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    nav.open {
+        max-height: none;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 1.5rem;
+        padding: 0;
+    }
+
+    #hamburger {
+        display: none;
+    }
+}
+
+/* ---- Screen more than 1024px ---- */
+@media screen and (min-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

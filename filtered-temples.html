@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Filtered Temple Album</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Alberto F. Conejo - Filtered Temples Activity">
+    <meta name="author" content="Alberto Flores">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1 id="title">Temple Album</h1>
+            <button id="hamburger" aria-label="Toggle navigation menu">☰</button>
+        </div>
+        <nav id="navigation">
+            <ul>
+                <li><a href="#" id="home" class="active">Home</a></li>
+                <li><a href="#" id="old">Old</a></li>
+                <li><a href="#" id="new">New</a></li>
+                <li><a href="#" id="large">Large</a></li>
+                <li><a href="#" id="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Temples Gallery</h1>
+        <div id="temple-grid" class="gallery">
+        </div>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> | Alberto F. Conejo | Barcelona, Spain
+        </p>
+        <p id="lastModified" class="last-modified"></p>
+    </footer>
+</body>
+</html>
