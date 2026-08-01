@@ -155,7 +155,7 @@ function renderTemples(templeArray) {
         const info = document.createElement('div');
         info.className = 'temple-info';
         info.innerHTML = `
-            <h2>${temple.templeName}</h2>
+            <h3>${temple.templeName}</h3>
             <p><strong>Location:</strong> ${temple.location}</p>
             <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
             <p><strong>Area:</strong> ${temple.area.toLocaleString()} sq ft</p>
