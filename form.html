@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131 - Product Review Form</title>
-    <meta name="description" content="Product Review Form for WDD 131">
+    <meta name="description" content="WDD 131 - Product Review Form for submitting product reviews. Includes product selection, rating, and feedback features.">
     <meta name="author" content="Alberto F. Conejo">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +22,7 @@
         <form action="review.html" method="get" class="wf1">
             <label for="product-name">Product Name</label>
             <select id="product-name" name="product" required>
-                <option value="" disabled selected>Choose a Product...</option>
+                <option value="" disabled selected>Select a Product...</option>
             </select>
             <fieldset class="form-group">
                 <legend>Overall Rating</legend>
@@ -50,10 +50,17 @@
             <fieldset class="features-box">
                 <legend>Which features did you find useful in the product?</legend>
                 <div class="features-grid">
-                    <label><input type="checkbox" name="durability" value="yes"> Durability</label>
-                    <label><input type="checkbox" name="easy-to-use" value="yes">Easy to use</label>
-                    <label><input type="checkbox" name="performance" value="yes">Performance</label>
-                    <label><input type="checkbox" name="design" value="yes">Design</label>
+                    <input type="checkbox" id="feature-durability" name="features" value="Durability">
+                    <label for="feature-durability">Durability</label>
+                    
+                    <input type="checkbox" id="feature-easy" name="features" value="Easy to use">
+                    <label for="feature-easy">Easy to use</label>
+                    
+                    <input type="checkbox" id="feature-performance" name="features" value="Performance">
+                    <label for="feature-performance">Performance</label>
+                    
+                    <input type="checkbox" id="feature-design" name="features" value="Design">
+                    <label for="feature-design">Design</label>
                 </div>
             </fieldset>
             <label for="comments">Written Review <span class="optional">(Optional)</span></label>

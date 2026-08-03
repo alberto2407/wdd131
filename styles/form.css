@@ -105,14 +105,6 @@ main {
     margin-bottom: 0.3rem;
 }
 
-/* .rating-box {
-    max-width: 100%;
-    padding: 0.5rem 0.8rem;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    background-color: #f9f9f9;
-} */
-
 .rating-box .clasificacion {
     display: flex;
     flex-direction: row-reverse;
@@ -172,19 +164,21 @@ fieldset legend {
 
 .features-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.3rem 1.5rem;
+    grid-template-columns: 1rem 5rem;
+    gap: .5rem .2rem;
     padding-top: 0.5rem;
+    align-items: center;
 }
 
 .features-grid label {
     display: flex;
     align-items: center;
-    gap: 0.4rem;
+    gap: 0.5rem;
     cursor: pointer;
     font-weight: 400;
     font-size: 0.95rem;
     text-align: left;
+    padding: 0.2rem 0;
 }
 
 .features-grid input[type="checkbox"] {
@@ -192,6 +186,7 @@ fieldset legend {
     cursor: pointer;
     flex-shrink: 0;
     margin: 0;
+    accent-color: var(--primary-color);
 }
 
 
@@ -268,15 +263,5 @@ input[type="submit"]:hover {
 
     .rating-box label {
         font-size: 1.8rem;
-    }
-
-    fieldset label {
-        display: block;
-        margin-bottom: 0.5rem;
-    }
-
-    .features-grid {
-        grid-template-columns: 1fr;
-        gap: 0.2rem;
     }
 }
