@@ -89,12 +89,6 @@
         display: block !important;
     }
 
-    /* HERO */
-    .hero-image {
-        mask-image: linear-gradient(to bottom, #155263 80%, transparent);
-        -webkit-mask-image: linear-gradient(to bottom, #155263 80%, transparent);
-    }
-
     /* INTRO*/
     .intro-grid {
         grid-template-columns: 1fr 1fr;

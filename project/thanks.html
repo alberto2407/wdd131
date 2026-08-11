@@ -8,14 +8,14 @@
     <meta name="author" content="Alberto F. Conejo">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="images/temple.ico">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
-    <script src="../scripts/getdates.js" defer></script>
     <script src="scripts/index.js" defer></script>
+    <script src="scripts/thanks.js" defer></script>
+    <script src="../scripts/getdates.js" defer></script>
   </head>
-
   <body>
     <header>
       <div class="header-content">
@@ -35,8 +35,8 @@
       <section class="thank-you-page">
         <div class="thank-you-content">
           <div class="success-icon">&#x1f64f;</div>
-          <h1>Thank You!</h1>
-          <h2>We Appreciate Your Interest</h2>
+          <h2>Thank You!</h2>
+          <h3>We Appreciate Your Interest</h3>
           <p class="thank-you-message">
             Your message has been received successfully. We are grateful for
             your interest in learning more about the Restoration of the Gospel
@@ -47,6 +47,12 @@
             questions and provide you with more information. We look forward to
             connecting with you!
           </p>
+          <div class="submission-counter">
+            <p>
+              <strong> Total Messages Sent:</strong>
+              <span id="submissionCount">0</span>
+            </p>
+          </div>
           <div class="thank-you-details">
             <p>&#128214; <strong>What to expect:</strong></p>
             <ul>
@@ -57,8 +63,8 @@
             </ul>
           </div>
           <div class="thank-you-buttons">
-            <a href="index.html" class="button">&#x1f3e1; Return to Home</a>
-            <a href="contact.html" class="button button-secondary">&#x1f4dd; Send Another Message</a>
+            <a href="index.html" class="button"> Return to Home</a>
+            <a href="contact.html" class="button button-secondary"> Send Another Message</a>
           </div>
         </div>
       </section>
